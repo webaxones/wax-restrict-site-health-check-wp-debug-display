@@ -50,3 +50,15 @@ function wax_block_site_health_access() {
 if ( ! WP_DEBUG_DISPLAY ) :
 	add_action( 'current_screen', 'wax_block_site_health_access' );
 endif;
+
+/**
+ * Remove Site Health dashboard widget if WP_DEBUG_DISPLAY is off
+ *
+ * @return void
+ */
+function wax_remove_site_health_dashboard_widget() {
+	remove_meta_box( 'dashboard_site_health', 'dashboard', 'normal' );
+}
+if ( ! WP_DEBUG_DISPLAY ) :
+	add_action( 'wp_dashboard_setup', 'wax_remove_site_health_dashboard_widget' );
+endif;
