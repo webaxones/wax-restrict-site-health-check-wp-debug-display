@@ -1,13 +1,15 @@
 {
-    "name": "Webaxones/wax-restrict-site-health-check-wp-debug-display",
-    "description": "Block Site Health Check only when WP_DEBUG_DISPLAY is off",
-    "license": "GPL-2.0",
-    "authors": [{
-        "name": "Webaxones",
-        "email": "contact@webaxones.com"
-    }],
-    "type": "wordpress-muplugin",
-    "require": {
-        "composer/installers": "~1.0"
-    }
+	"name": "Webaxones/wax-restrict-site-health-check-wp-debug-display",
+	"description": "Block Site Health Check only when WP_DEBUG_DISPLAY is off",
+	"license": "GPL-2.0",
+	"authors": [
+		{
+			"name": "Webaxones",
+			"email": "contact@webaxones.com"
+		}
+	],
+	"type": "wordpress-muplugin",
+	"require": {
+		"composer/installers": "^1.0 || ^2.0"
+	}
 }
